@@ -26,7 +26,7 @@ class Main extends PluginBase implements Listener
     {
         $player = $event->getPlayer();
 
-        /* Honestly i hate using 1 code in 2 line just for a little stupid change */
+        /* Honestly i hate using 1 code in 2 lines just for a little stupid change */
         foreach ([0, 1] as $num) {
             $player->getLevel()->setBlock(new Vector3($player->getX() + $num, $player->getY(), $player->getZ()), Block::get(Block::CHEST));
         }
